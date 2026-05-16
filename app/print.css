@@ -1,0 +1,195 @@
+/* ============================================================
+   PRINT STYLESHEET — Portfolio Miloš Stamenković (EN)
+   A4 portrait, one section per page
+   ============================================================ */
+
+@media print {
+
+  /* ── Page setup ───────────────────────────────────────── */
+  @page {
+    size: A4 portrait;
+    margin: 14mm 18mm;
+  }
+
+  /* ── Force background colours & images to print ───────── */
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* ── Kill all framer-motion / CSS animations ──────────── */
+  * {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    will-change: auto !important;
+  }
+
+  /* ── Base ─────────────────────────────────────────────── */
+  html,
+  body {
+    background: #f7f5f1 !important;
+    color: #0a0a0a !important;
+    font-size: 10.5pt;
+    line-height: 1.7;
+    width: 100%;
+  }
+
+  /* ── Hide nav ─────────────────────────────────────────── */
+  nav {
+    display: none !important;
+  }
+
+  /* ── Each <section> → new A4 page ────────────────────── */
+  section {
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: auto;
+    min-height: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  section:last-of-type {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  section > div {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 18pt 0 !important;
+  }
+
+  /* ── Typography ───────────────────────────────────────── */
+  .eyebrow {
+    font-size: 7.5pt !important;
+    letter-spacing: 0.14em;
+    margin-bottom: 8pt !important;
+  }
+
+  .section-title {
+    font-size: 26pt !important;
+    line-height: 1.15 !important;
+    margin-bottom: 10pt !important;
+  }
+
+  .body-text {
+    font-size: 10pt !important;
+    line-height: 1.75 !important;
+    margin-bottom: 18pt !important;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* ── Cards ────────────────────────────────────────────── */
+  .card {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    border: 1px solid #e2dfd8 !important;
+    border-radius: 4px !important;
+    padding: 14pt !important;
+    background: #edeae4 !important;
+  }
+
+  .card-dark {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    background: #0a0a0a !important;
+    border-radius: 4px !important;
+    padding: 16pt !important;
+  }
+
+  /* ── 2-col and 3-col grids ────────────────────────────── */
+  .grid-2col {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10pt !important;
+    margin-bottom: 14pt !important;
+  }
+
+  .grid-3col {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 8pt !important;
+    margin-bottom: 14pt !important;
+  }
+
+  /* ── Pills ────────────────────────────────────────────── */
+  .pill-red {
+    display: inline-flex !important;
+    background: #c0392b !important;
+    color: #fff !important;
+    padding: 3pt 8pt !important;
+    border-radius: 2px !important;
+    font-size: 7pt !important;
+  }
+
+  .pill-dark {
+    display: inline-flex !important;
+    background: #0a0a0a !important;
+    color: rgba(255,255,255,0.75) !important;
+    padding: 3pt 8pt !important;
+    border-radius: 2px !important;
+    font-size: 7pt !important;
+  }
+
+  .pill-outline {
+    display: inline-flex !important;
+    border: 1px solid #e2dfd8 !important;
+    color: #888 !important;
+    padding: 3pt 8pt !important;
+    border-radius: 2px !important;
+    font-size: 7pt !important;
+  }
+
+  /* ── Stats ────────────────────────────────────────────── */
+  .stat-number {
+    font-size: 24pt !important;
+    line-height: 1 !important;
+  }
+
+  .stat-label {
+    font-size: 7pt !important;
+    letter-spacing: 0.12em;
+  }
+
+  /* ── Badge ────────────────────────────────────────────── */
+  .badge {
+    font-size: 7pt !important;
+    letter-spacing: 0.1em;
+    margin-bottom: 6pt !important;
+    color: #c0392b !important;
+  }
+
+  /* ── Divider ──────────────────────────────────────────── */
+  .divider {
+    height: 1px !important;
+    background: #e2dfd8 !important;
+    margin: 16pt 0 !important;
+  }
+
+  /* ── Don't append href text after links ───────────────── */
+  a[href]::after {
+    content: none !important;
+  }
+
+  /* ── Cover: flush top ─────────────────────────────────── */
+  #cover {
+    min-height: 0 !important;
+    align-items: flex-start !important;
+  }
+
+  #cover > div {
+    padding-top: 32pt !important;
+  }
+
+}
