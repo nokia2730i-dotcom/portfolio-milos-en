@@ -27,7 +27,7 @@ export default function Contact() {
 
         <div className="grid-2col" style={{ marginBottom: 16 }}>
           {[
-            { label: 'Instagram', val: '@konobarignite', href: 'https://www.instagram.com/konobarignite/' },
+            { label: 'Instagram', val: '@milos.ugostitelj', href: 'https://www.instagram.com/milos.ugostitelj/' },
             { label: 'YouTube', val: '@milosstamenkovic888', href: 'https://www.youtube.com/@milosstamenkovic888' },
             { label: 'Linkversity Blog', val: 'linkversity.hr/blog/author/milos', href: 'https://linkversity.hr/blog/author/milos/' },
             { label: 'Response time', val: 'Within 24h on business days', href: null },
@@ -148,7 +148,7 @@ export default function Contact() {
         </div>
 
         <motion.a
-          href="https://www.instagram.com/konobarignite/"
+          href="https://www.instagram.com/milos.ugostitelj/"
           target="_blank"
           rel="noopener noreferrer"
           {...A}
@@ -180,7 +180,7 @@ export default function Contact() {
             Send a message →
           </span>
           <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.38)' }}>
-            instagram.com/konobarignite
+            instagram.com/milos.ugostitelj
           </span>
         </motion.a>
 

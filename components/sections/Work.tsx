@@ -99,9 +99,9 @@ const standard = [
   },
   {
     badge: 'SOCIAL MEDIA',
-    url: 'https://www.instagram.com/konobarignite/',
+    url: 'https://www.instagram.com/milos.ugostitelj/',
     bg: '#1a0f1a',
-    title: '@konobarignite',
+    title: '@milos.ugostitelj',
     sub: 'Hospitality · Personal brand · Instagram · Short-form content',
     body: 'Instagram profile at the intersection of hospitality culture and digital marketing. Authentic voice building an audience in the hospitality niche — Reels, Stories, educational content about the industry. Personal brand built from experience, not theory.',
     kpi: 'Hospitality niche · Reels format · Personal brand · Instagram strategy',
