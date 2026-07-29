@@ -34,9 +34,9 @@
 4. Glamorous Paws — https://glamorous-paws.com/ (WordPress)
 5. Tehnički Pregled XL — https://tehnickipregled-xl.rs/ (WordPress)
 6. AI Mediterranean Music — https://www.youtube.com/@milosstamenkovic888 (AI Content)
-7. @konobarignite — https://www.instagram.com/konobarignite/ (Social Media)
+7. @milos.ugostitelj — https://www.instagram.com/milos.ugostitelj/ (Social Media)
 
 ## Contact
-- Instagram: https://www.instagram.com/konobarignite/
+- Instagram: https://www.instagram.com/milos.ugostitelj/
 - YouTube: https://www.youtube.com/@milosstamenkovic888
 - Linkversity: https://linkversity.hr/blog/author/milos/
