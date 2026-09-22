@@ -86,9 +86,9 @@ production) > a hard-coded fallback. The OG image MUST have an absolute URL or
 WhatsApp and LinkedIn will not fetch it. When a custom domain is attached, set
 `NEXT_PUBLIC_SITE_URL` in the Vercel env rather than editing the code.
 
-**The hard-coded fallback is `https://portfolio-milos-en.vercel.app` and has not
-been confirmed** — it is only used when neither env var is present, so Vercel
-production is unaffected, but verify it if previews ever show a broken image.
+The hard-coded fallback is `https://portfolio-milos-en.vercel.app` — confirmed
+correct as this project's production domain. It is only reached when neither env
+var is present (local builds), since Vercel supplies the domain in production.
 
 ## Serbian counterpart
 `portfolio-milos` (portfolio-milos.vercel.app) is the same site in Serbian and is
