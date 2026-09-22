@@ -18,7 +18,7 @@ const contacts = [
 
 const cardLabel: React.CSSProperties = {
   fontSize: 9,
-  fontFamily: 'var(--font-syne), Syne, sans-serif',
+  fontFamily: 'var(--font-display), Cinzel, serif',
   fontWeight: 700,
   letterSpacing: '0.14em',
   textTransform: 'uppercase',
@@ -27,7 +27,7 @@ const cardLabel: React.CSSProperties = {
 }
 
 const cardValue: React.CSSProperties = {
-  fontFamily: 'var(--font-syne), Syne, sans-serif',
+  fontFamily: 'var(--font-display), Cinzel, serif',
   fontWeight: 800,
   fontSize: 14,
   color: 'var(--red)',
@@ -98,7 +98,7 @@ export default function Contact() {
         >
           <span
             style={{
-              fontFamily: 'var(--font-syne), Syne, sans-serif',
+              fontFamily: 'var(--font-display), Cinzel, serif',
               fontWeight: 800,
               fontSize: 22,
               color: '#fff',

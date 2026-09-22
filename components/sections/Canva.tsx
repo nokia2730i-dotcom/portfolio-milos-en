@@ -53,7 +53,7 @@ export default function Canva() {
             >
               <h3
                 style={{
-                  fontFamily: 'var(--font-syne), Syne, sans-serif',
+                  fontFamily: 'var(--font-display), Cinzel, serif',
                   fontWeight: 800,
                   fontSize: 15,
                   color: 'var(--ink)',

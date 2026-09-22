@@ -79,7 +79,7 @@ export default function AITools() {
               >
                 <span
                   style={{
-                    fontFamily: 'var(--font-syne), Syne, sans-serif',
+                    fontFamily: 'var(--font-display), Cinzel, serif',
                     fontWeight: 800,
                     fontSize: 11,
                     color: '#fff',
@@ -91,7 +91,7 @@ export default function AITools() {
               <div>
                 <h3
                   style={{
-                    fontFamily: 'var(--font-syne), Syne, sans-serif',
+                    fontFamily: 'var(--font-display), Cinzel, serif',
                     fontWeight: 800,
                     fontSize: 15,
                     color: 'var(--ink)',

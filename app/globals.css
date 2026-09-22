@@ -28,7 +28,7 @@ body {
 }
 
 .eyebrow {
-  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-family: var(--font-display), 'Cinzel', serif;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -38,7 +38,7 @@ body {
 }
 
 .section-title {
-  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-family: var(--font-display), 'Cinzel', serif;
   font-weight: 800;
   font-size: 42px;
   line-height: 1.15;
@@ -84,7 +84,7 @@ body {
 }
 
 .badge {
-  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-family: var(--font-display), 'Cinzel', serif;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -98,7 +98,7 @@ body {
   align-items: center;
   background: var(--red);
   color: #fff;
-  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-family: var(--font-display), 'Cinzel', serif;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -112,7 +112,7 @@ body {
   align-items: center;
   background: var(--ink);
   color: rgba(255, 255, 255, 0.7);
-  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-family: var(--font-display), 'Cinzel', serif;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -127,7 +127,7 @@ body {
   background: transparent;
   color: var(--ink-3);
   border: 1px solid var(--paper-3);
-  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-family: var(--font-display), 'Cinzel', serif;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -137,7 +137,7 @@ body {
 }
 
 .stat-number {
-  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-family: var(--font-display), 'Cinzel', serif;
   font-weight: 800;
   font-size: 32px;
   color: var(--ink);
@@ -146,7 +146,7 @@ body {
 }
 
 .stat-label {
-  font-family: var(--font-syne), 'Syne', sans-serif;
+  font-family: var(--font-display), 'Cinzel', serif;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.12em;

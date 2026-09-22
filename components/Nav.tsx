@@ -40,7 +40,7 @@ export default function Nav() {
     >
       <span
         style={{
-          fontFamily: 'var(--font-syne), Syne, sans-serif',
+          fontFamily: 'var(--font-display), Cinzel, serif',
           fontWeight: 800,
           fontSize: 15,
           color: '#f7f5f1',
@@ -56,7 +56,7 @@ export default function Nav() {
             key={id}
             onClick={() => scrollTo(id)}
             style={{
-              fontFamily: 'var(--font-syne), Syne, sans-serif',
+              fontFamily: 'var(--font-display), Cinzel, serif',
               fontSize: 10,
               fontWeight: 700,
               letterSpacing: '0.08em',
@@ -79,7 +79,7 @@ export default function Nav() {
       <button
         onClick={() => window.print()}
         style={{
-          fontFamily: 'var(--font-syne), Syne, sans-serif',
+          fontFamily: 'var(--font-display), Cinzel, serif',
           fontSize: 10,
           fontWeight: 700,
           letterSpacing: '0.08em',

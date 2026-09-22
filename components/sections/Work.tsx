@@ -181,7 +181,7 @@ function FeaturedCard({ p, i }: { p: Project; i: number }) {
       <p className="badge">{p.badge}</p>
       <h3
         style={{
-          fontFamily: 'var(--font-syne), Syne, sans-serif',
+          fontFamily: 'var(--font-display), Cinzel, serif',
           fontWeight: 800,
           fontSize: 'clamp(18px, 4.6vw, 26px)',
           color: '#fff',
@@ -196,7 +196,7 @@ function FeaturedCard({ p, i }: { p: Project; i: number }) {
           fontSize: 11,
           color: 'rgba(255,255,255,0.38)',
           marginBottom: 20,
-          fontFamily: 'var(--font-syne), Syne, sans-serif',
+          fontFamily: 'var(--font-display), Cinzel, serif',
           letterSpacing: '0.06em',
           textTransform: 'uppercase',
         }}
@@ -265,7 +265,7 @@ function FeaturedCard({ p, i }: { p: Project; i: number }) {
       <p
         style={{
           fontSize: 9,
-          fontFamily: 'var(--font-syne), Syne, sans-serif',
+          fontFamily: 'var(--font-display), Cinzel, serif',
           fontWeight: 700,
           letterSpacing: '0.12em',
           textTransform: 'uppercase',
@@ -330,7 +330,7 @@ export default function Work() {
                 <p className="badge">{p.badge}</p>
                 <h3
                   style={{
-                    fontFamily: 'var(--font-syne), Syne, sans-serif',
+                    fontFamily: 'var(--font-display), Cinzel, serif',
                     fontWeight: 800,
                     fontSize: 17,
                     color: 'var(--ink)',
@@ -344,7 +344,7 @@ export default function Work() {
                     fontSize: 10,
                     color: 'var(--ink-3)',
                     marginBottom: 14,
-                    fontFamily: 'var(--font-syne), Syne, sans-serif',
+                    fontFamily: 'var(--font-display), Cinzel, serif',
                     letterSpacing: '0.06em',
                     textTransform: 'uppercase',
                   }}
@@ -379,7 +379,7 @@ export default function Work() {
                 <p
                   style={{
                     fontSize: 9,
-                    fontFamily: 'var(--font-syne), Syne, sans-serif',
+                    fontFamily: 'var(--font-display), Cinzel, serif',
                     fontWeight: 700,
                     letterSpacing: '0.12em',
                     textTransform: 'uppercase',

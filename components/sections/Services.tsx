@@ -75,7 +75,7 @@ export default function Services() {
             >
               <span
                 style={{
-                  fontFamily: 'var(--font-syne), Syne, sans-serif',
+                  fontFamily: 'var(--font-display), Cinzel, serif',
                   fontWeight: 800,
                   fontSize: 28,
                   color: 'var(--paper-3)',
@@ -89,7 +89,7 @@ export default function Services() {
               <div style={{ flex: 1 }}>
                 <h3
                   style={{
-                    fontFamily: 'var(--font-syne), Syne, sans-serif',
+                    fontFamily: 'var(--font-display), Cinzel, serif',
                     fontWeight: 800,
                     fontSize: 17,
                     color: 'var(--ink)',
@@ -103,7 +103,7 @@ export default function Services() {
                 </p>
                 <p
                   style={{
-                    fontFamily: 'var(--font-syne), Syne, sans-serif',
+                    fontFamily: 'var(--font-display), Cinzel, serif',
                     fontSize: 9,
                     fontWeight: 700,
                     letterSpacing: '0.12em',

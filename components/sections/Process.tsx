@@ -85,7 +85,7 @@ export default function Process() {
               >
                 <span
                   style={{
-                    fontFamily: 'var(--font-syne), Syne, sans-serif',
+                    fontFamily: 'var(--font-display), Cinzel, serif',
                     fontWeight: 800,
                     fontSize: 14,
                     color: '#fff',
@@ -106,7 +106,7 @@ export default function Process() {
                 >
                   <h3
                     style={{
-                      fontFamily: 'var(--font-syne), Syne, sans-serif',
+                      fontFamily: 'var(--font-display), Cinzel, serif',
                       fontWeight: 800,
                       fontSize: 16,
                       color: 'var(--ink)',
@@ -119,7 +119,7 @@ export default function Process() {
                       style={{
                         fontSize: 11,
                         color: 'var(--red)',
-                        fontFamily: 'var(--font-syne), Syne, sans-serif',
+                        fontFamily: 'var(--font-display), Cinzel, serif',
                         fontWeight: 700,
                         letterSpacing: '0.08em',
                       }}

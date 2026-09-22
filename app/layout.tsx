@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
-import { Syne, Inter } from 'next/font/google'
+import { Cinzel, Inter } from 'next/font/google'
 import './globals.css'
 import './print.css'
 
-const syne = Syne({
-  subsets: ['latin'],
+const cinzel = Cinzel({
+  // latin-ext je obavezan: nosi č ć š ž đ. Bez njega dijakritike
+  // padaju u fallback i lome se usred reči.
+  subsets: ['latin', 'latin-ext'],
   weight: ['700', '800'],
-  variable: '--font-syne',
+  variable: '--font-display',
   display: 'swap',
 })
 
@@ -59,7 +61,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${syne.variable} ${inter.variable}`}>{children}</body>
+      <body className={`${cinzel.variable} ${inter.variable}`}>{children}</body>
     </html>
   )
 }

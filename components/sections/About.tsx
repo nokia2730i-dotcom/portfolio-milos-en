@@ -10,7 +10,7 @@ const A = {
 
 const cardLabel: React.CSSProperties = {
   fontSize: 9,
-  fontFamily: 'var(--font-syne), Syne, sans-serif',
+  fontFamily: 'var(--font-display), Cinzel, serif',
   fontWeight: 700,
   letterSpacing: '0.14em',
   textTransform: 'uppercase',
@@ -18,7 +18,7 @@ const cardLabel: React.CSSProperties = {
 }
 
 const cardTitle: React.CSSProperties = {
-  fontFamily: 'var(--font-syne), Syne, sans-serif',
+  fontFamily: 'var(--font-display), Cinzel, serif',
   fontWeight: 800,
   fontSize: 16,
   marginBottom: 8,

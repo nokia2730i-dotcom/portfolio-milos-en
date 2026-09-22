@@ -13,7 +13,18 @@ at in that screenshot. Serbian version uses `76.705` / `98,7%`; English uses
 `76,705` / `98.7%`.
 
 ## Design System
-- Fonts: Syne (700, 800) + Inter (400, 500) via next/font/google
+- Fonts: **Cinzel** (700, 800) for headings + Inter (400, 500) for body, via
+  next/font/google. The CSS variable is `--font-display`, the stack is
+  `var(--font-display), Cinzel, serif`. No reference to Syne is left in the code.
+- **Cinzel MUST use `subsets: ['latin', 'latin-ext']`.** Plain `latin` does not
+  carry č ć š ž đ, which appear in names on this site (Miloš Stamenković,
+  Tehnički Pregled XL) — without latin-ext they fall back mid-word. Verified
+  glyph by glyph: all 18 Serbian characters render in Cinzel.
+- Cinzel is the site owner's decision, made after reviewing a full render.
+  Accepted trade-off: Cinzel has no true lowercase (everything maps to small
+  caps), so the micro-labels — eyebrow, badge, stat-label, pills and nav — lose
+  contrast against body text. That is not a bug; do not "fix" it by reverting to
+  a sans-serif. Syne was used before Cinzel.
 - Ink: #0a0a0a | Ink-2: #444444 | Ink-3: #888888
 - Paper: #f7f5f1 | Paper-2: #edeae4 | Paper-3: #e2dfd8
 - Red accent: #c0392b | Red-light: #f9ece9
@@ -76,7 +87,7 @@ sticks on the previous section.
 ## OG tags / link preview
 `public/og.png` is the 1200x630 card shown when the link is shared on WhatsApp,
 LinkedIn or Slack. It was produced by rendering HTML in this design system with the
-real Syne font (not in an image editor) — regenerate it the same way rather than
+real Cinzel font (not in an image editor) — regenerate it the same way rather than
 editing the PNG by hand. It carries three verifiable numbers, so the same rule as
 the site applies: nothing that cannot be pointed at in `case-76k.png`.
 
