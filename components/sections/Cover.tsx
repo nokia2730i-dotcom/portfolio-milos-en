@@ -22,7 +22,7 @@ export default function Cover() {
     >
       <div style={{ maxWidth: 920, margin: '0 auto', width: '100%' }}>
         <motion.div {...A}>
-          <p className="eyebrow">Social Media Designer & Digital Product Builder</p>
+          <p className="eyebrow">Social Media Manager & Content Strategist</p>
 
           <h1
             style={{
@@ -76,9 +76,9 @@ export default function Cover() {
             }}
           >
             {[
-              ['3+', 'Years of experience'],
-              ['7', 'Completed projects'],
-              ['10+', 'Blog posts'],
+              ['76K', 'Views on one post'],
+              ['660', 'New followers from one post'],
+              ['20+', 'Years working with people'],
             ].map(([num, lbl]) => (
               <div key={lbl}>
                 <div className="stat-number">{num}</div>

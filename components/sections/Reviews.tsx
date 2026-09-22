@@ -57,13 +57,8 @@ export default function Reviews() {
           </p>
         </motion.div>
 
-        <div className="grid-2col" style={{ marginBottom: 48 }}>
+        <div>
           {[
-            {
-              type: 'Digital tool',
-              quote: '"FoodCost Analysis solved a problem we\'d been ignoring for years."',
-              body: 'We finally see where the money goes in the kitchen. A tool that truly understands hospitality. — Platform user',
-            },
             {
               type: 'Web project',
               quote: '"The site is easy to update and looks exactly how we wanted."',
@@ -108,26 +103,6 @@ export default function Reviews() {
           ))}
         </div>
 
-        <div
-          style={{
-            display: 'flex',
-            gap: 48,
-            flexWrap: 'wrap',
-            borderTop: '1px solid var(--paper-3)',
-            paddingTop: 32,
-          }}
-        >
-          {[
-            ['100%', 'On-time delivery'],
-            ['6', 'Completed projects'],
-            ['70%', 'Repeat clients'],
-          ].map(([n, l]) => (
-            <div key={l}>
-              <div className="stat-number">{n}</div>
-              <div className="stat-label">{l}</div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   )

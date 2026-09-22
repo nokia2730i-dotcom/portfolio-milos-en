@@ -4,33 +4,33 @@ import { motion } from 'framer-motion'
 const steps = [
   {
     num: '1',
-    title: 'Discovery',
-    time: '1 to 2 days',
-    body: 'Deep dive into the brand or project: goals, audience, competitors, tone. We don\'t touch production before alignment.',
+    title: 'Goal and audience',
+    time: 'before any idea',
+    body: 'What the post needs to achieve and who it speaks to. Reach, DMs, profile visits, sales — every goal needs a different format. Without this you are shooting blind.',
   },
   {
     num: '2',
-    title: 'Strategy',
-    time: '2 to 3 days',
-    body: 'Content plan or application architecture. Approved before a single pixel of design or line of code is touched.',
+    title: 'Hook and angle',
+    time: 'the first second',
+    body: 'Which problem the audience recognizes instantly and which words hit it. Several hook versions for the same idea, then the one with the most concrete promise wins.',
   },
   {
     num: '3',
-    title: 'Production',
-    time: '3 to 7 days',
-    body: 'Canva brand kit, video editing, WordPress site or web application. Batch production for content.',
+    title: 'Production in batches',
+    time: 'batch, not one by one',
+    body: 'Same setup, more posts. Captions, pacing and sound on the same system — that is why the profile stays consistent when the tempo goes up.',
   },
   {
     num: '4',
-    title: 'Review',
-    time: '1 to 2 days',
-    body: '2 rounds of revisions included. Hard deadlines on both sides — this is not an infinite loop.',
+    title: 'Publishing and CTA',
+    time: 'one ask, not two',
+    body: 'Caption, hashtag set, posting time and one clear next step. Two calls to action in the same post split attention and both lose.',
   },
   {
     num: '5',
-    title: 'Delivery + Optimisation',
-    time: '',
-    body: 'Files, deploy, caption copy, hashtag strategy, posting schedule. Monthly report on retainer.',
+    title: 'Reading the numbers',
+    time: 'input for the next loop',
+    body: 'What held attention, what earned saves and DMs. I extract the rule, write it into the plan — and the loop starts again.',
   },
 ]
 
@@ -44,13 +44,14 @@ export default function Process() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="eyebrow">How I work</p>
+          <p className="eyebrow">How I work with content</p>
           <h2 className="section-title">
-            No surprises. No ghost edits.{' '}
-            <span style={{ color: 'var(--red)' }}>Just clean delivery.</span>
+            Content is not inspiration.{' '}
+            <span style={{ color: 'var(--red)' }}>It is a loop that repeats.</span>
           </h2>
           <p className="body-text" style={{ maxWidth: 580 }}>
-            Every project goes through the same 5 steps. Clear scope, clear deadlines, zero ambiguity.
+            The same path for every brand — from the goal to the next post. That is why it does
+            not depend on whether today was a good day for ideas.
           </p>
         </motion.div>
 

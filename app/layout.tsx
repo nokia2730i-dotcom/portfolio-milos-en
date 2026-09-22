@@ -18,9 +18,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Miloš Stamenković — Social Media Designer & Digital Product Builder',
+  title: 'Miloš Stamenković — Social Media Manager & Content Strategist',
   description:
-    'Portfolio: short-form video, Canva systems, Reels production, WordPress sites and web apps on Vercel. For brands that know attention is the most expensive currency.',
+    'Instagram and TikTok strategy, short-form production and analytics turned into action. 76,705 views and 660 new followers from one organic post.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

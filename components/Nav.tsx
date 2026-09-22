@@ -1,8 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react'
 
-const sections = ['cover', 'about', 'services', 'work', 'canva', 'reels', 'ai', 'process', 'reviews', 'contact']
-const labels   = ['Intro', 'About', 'Services', 'Projects', 'Canva', 'Reels', 'AI', 'Process', 'Reviews', 'Contact']
+const sections = ['cover', 'about', 'services', 'reels', 'work', 'canva', 'ai', 'process', 'reviews', 'contact']
+const labels   = ['Intro', 'About', 'What I bring', 'Reels', 'Projects', 'Canva', 'AI', 'Method', 'Reviews', 'Contact']
 
 export default function Nav() {
   const [active, setActive] = useState('cover')
@@ -10,7 +10,9 @@ export default function Nav() {
   useEffect(() => {
     const obs = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id) }),
-      { threshold: 0.4 }
+      // narrow band mid-viewport: whichever section crosses it is active.
+      // threshold 0.4 never fired for sections taller than 2.5 screens (Projects).
+      { threshold: 0, rootMargin: '-45% 0px -45% 0px' }
     )
     sections.forEach(id => {
       const el = document.getElementById(id)

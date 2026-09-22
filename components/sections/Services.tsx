@@ -4,39 +4,39 @@ import { motion } from 'framer-motion'
 const services = [
   {
     num: '01',
-    title: 'Short-form Video Production',
-    body: 'Reels, TikTok, Shorts — from concept to delivery. Hook design, pacing, sound, captions. Content that gets shown and gets remembered.',
-    meta: '3–10 videos/week · 48h delivery',
+    title: 'Instagram and TikTok strategy',
+    body: 'A content plan that starts from the goal, not the idea. Who the audience is, which problem they recognize instantly, and which format stops them. An idea without a goal is just content.',
+    meta: 'Content plan · Posting calendar · Format per goal',
   },
   {
     num: '02',
-    title: 'Canva Brand System',
-    body: 'Complete brand kit + 20–50 custom templates. Built once, used forever. Consistency without a designer on permanent call.',
-    meta: 'Brand kit · Templates · Style guide',
+    title: 'Scroll-stopping ideas and hooks',
+    body: 'A hook is not a headline — it is a promise the first second has to pay off. I write several versions of the same idea, pick the one that promises something concrete, then test it on a real audience.',
+    meta: 'Hook bank · Pattern interrupt · Tested on audience',
   },
   {
     num: '03',
-    title: 'AI Content Strategy',
-    body: 'Monthly content plan with AI — hooks, series concepts, captions, competitor analysis. Strategy before production, always.',
-    meta: '30-day plan · Hook bank · Caption copy',
+    title: 'Short-form production',
+    body: 'Reels, TikTok and Shorts from concept to finished video — shooting, editing, pacing, sound, captions. An idea does not wait for someone else to free up.',
+    meta: 'Shooting · Editing · Captions · CapCut & Canva',
   },
   {
     num: '04',
-    title: 'Instagram Visual Refresh',
-    body: 'Grid, Highlights, Stories system, bio. One week — a profile that looks 10x more premium.',
-    meta: 'Profile audit · Grid system · Stories kit',
+    title: 'Analytics turned into action',
+    body: 'Reach, engagement and saves are not a report — they are instructions for the next post. I read what held attention, extract the rule, and write it into the plan.',
+    meta: 'Insights · What to repeat · What to drop',
   },
   {
     num: '05',
-    title: 'WordPress Websites',
-    body: 'Professional websites for local business — from zero to live. SEO basics, blog, mobile-first design.',
-    meta: 'WordPress · SEO · Blog · Canva',
+    title: 'Client communication',
+    body: 'Two decades at the table with a guest mean I know how to talk to an owner, take criticism without defending, and explain a decision without jargon. A client who understands why approves faster.',
+    meta: 'Brief · Pitching ideas · Feedback without drama',
   },
   {
     num: '06',
-    title: 'Web Apps & Digital Tools',
-    body: 'Business web tools deployed on Vercel — calculators, analytics systems, SaaS micro-products for specific industries. See: FoodCost Analysis and BizBreak.',
-    meta: 'Next.js · Vercel · React · Hospitality & business',
+    title: 'Visual systems and AI speed',
+    body: 'Canva brand kit and templates so the whole team posts consistently, without a designer on every task. AI for speed — Claude, Suno, ElevenLabs, CapCut. The creative call stays human.',
+    meta: 'Canva Pro · Brand kit · AI workflow',
   },
 ]
 
@@ -50,10 +50,10 @@ export default function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="eyebrow">Services</p>
+          <p className="eyebrow">What I bring to a team</p>
           <h2 className="section-title">
-            Six things I do{' '}
-            <span style={{ color: 'var(--red)' }}>exceptionally well.</span>
+            Six things a team gets{' '}
+            <span style={{ color: 'var(--red)' }}>on day one.</span>
           </h2>
         </motion.div>
 

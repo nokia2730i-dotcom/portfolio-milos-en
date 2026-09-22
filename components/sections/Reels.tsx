@@ -98,9 +98,8 @@ export default function Reels() {
           }}
         >
           {[
-            ['3x', 'Above average watch time'],
-            ['15+', 'Reel formats'],
-            ['48h', 'Average delivery'],
+            ['98.7%', 'Reach beyond my followers'],
+            ['344', 'Saves on one post'],
           ].map(([n, l]) => (
             <div key={l}>
               <div className="stat-number">{n}</div>

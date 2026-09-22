@@ -18,9 +18,9 @@ export default function Home() {
         <Cover />
         <About />
         <Services />
+        <Reels />
         <Work />
         <Canva />
-        <Reels />
         <AITools />
         <Process />
         <Reviews />

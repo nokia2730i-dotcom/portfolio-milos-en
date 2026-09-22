@@ -4,27 +4,20 @@ import { motion } from 'framer-motion'
 const cards = [
   {
     title: 'Brand Kit',
-    body: 'Built once, useful forever. Fonts, colours, logo, reusable elements. Your brand stays locked — no more "which blue was that?"',
+    body: 'Fonts, colors, logo and reusable elements in one place. No more "which blue was that" halfway through a task.',
   },
   {
-    title: 'Template System',
-    body: '20–50 custom templates. Reels, Stories, Carousel, Thumbnail. Clients edit them without a designer.',
+    title: 'Template system',
+    body: 'Reels, Stories, carousel, thumbnail. Whoever on the team picks up the task — the same visual language comes out.',
   },
   {
     title: 'Canva AI',
-    body: 'Magic Studio workflow. Background removal, Magic Write, text-to-image. 3x faster delivery.',
+    body: 'Magic Studio workflow: background removal, Magic Write, text-to-image. Less time on technique, more on the idea.',
   },
   {
     title: 'Video in Canva',
-    body: 'Reels without Premiere. Transitions, beat sync, auto-captions, B-roll.',
+    body: 'Reels without Premiere. Transitions, beat sync, auto-captions, B-roll — enough for a daily posting tempo.',
   },
-]
-
-const skills = [
-  { label: 'Visual design & layout', pct: 95 },
-  { label: 'Brand system architecture', pct: 90 },
-  { label: 'Video & animation', pct: 80 },
-  { label: 'Canva AI features', pct: 88 },
 ]
 
 export default function Canva() {
@@ -43,12 +36,12 @@ export default function Canva() {
             <span style={{ color: 'var(--red)' }}>a system.</span>
           </h2>
           <p className="body-text" style={{ maxWidth: 580 }}>
-            Anyone can drag and drop. Building a brand system that works across 50 templates,
-            stays consistent and actually saves time — that&apos;s a different skill.
+            Anyone can drag and drop. Building a system where several people post for a whole
+            week and the profile looks like one hand made it — that is a different skill.
           </p>
         </motion.div>
 
-        <div className="grid-2col" style={{ marginBottom: 48 }}>
+        <div className="grid-2col">
           {cards.map((c, i) => (
             <motion.div
               key={c.title}
@@ -70,44 +63,6 @@ export default function Canva() {
                 {c.title}
               </h3>
               <p style={{ fontSize: 13, lineHeight: 1.75, color: 'var(--ink-2)' }}>{c.body}</p>
-            </motion.div>
-          ))}
-        </div>
-
-        <div className="divider" />
-
-        <div>
-          {skills.map((s, i) => (
-            <motion.div
-              key={s.label}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              style={{ marginBottom: 18 }}
-            >
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
-                <span style={{ fontSize: 14, color: 'var(--ink)' }}>{s.label}</span>
-                <span
-                  style={{
-                    fontSize: 13,
-                    color: 'var(--ink-3)',
-                    fontFamily: 'var(--font-syne), Syne, sans-serif',
-                    fontWeight: 700,
-                  }}
-                >
-                  {s.pct}%
-                </span>
-              </div>
-              <div style={{ height: 3, background: 'var(--paper-3)', borderRadius: 2 }}>
-                <motion.div
-                  initial={{ scaleX: 0 }}
-                  whileInView={{ scaleX: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.9, delay: 0.3 + i * 0.1 }}
-                  style={{ height: 3, background: 'var(--ink)', borderRadius: 2, width: `${s.pct}%`, transformOrigin: 'left' }}
-                />
-              </div>
             </motion.div>
           ))}
         </div>
