@@ -73,6 +73,23 @@ sticks on the previous section.
 - Email: nokia2730i@gmail.com
 - Phone: +381 64 261 4867
 
+## OG tags / link preview
+`public/og.png` is the 1200x630 card shown when the link is shared on WhatsApp,
+LinkedIn or Slack. It was produced by rendering HTML in this design system with the
+real Syne font (not in an image editor) — regenerate it the same way rather than
+editing the PNG by hand. It carries three verifiable numbers, so the same rule as
+the site applies: nothing that cannot be pointed at in `case-76k.png`.
+
+`layout.tsx` resolves an absolute `siteUrl` via `resolveSiteUrl()`:
+`NEXT_PUBLIC_SITE_URL` > `VERCEL_PROJECT_PRODUCTION_URL` (Vercel sets this in
+production) > a hard-coded fallback. The OG image MUST have an absolute URL or
+WhatsApp and LinkedIn will not fetch it. When a custom domain is attached, set
+`NEXT_PUBLIC_SITE_URL` in the Vercel env rather than editing the code.
+
+**The hard-coded fallback is `https://portfolio-milos-en.vercel.app` and has not
+been confirmed** — it is only used when neither env var is present, so Vercel
+production is unaffected, but verify it if previews ever show a broken image.
+
 ## Serbian counterpart
 `portfolio-milos` (portfolio-milos.vercel.app) is the same site in Serbian and is
 kept structurally identical — port changes to both.
